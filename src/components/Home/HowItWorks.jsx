@@ -48,7 +48,7 @@ const HowItWorks = () => {
         {/* Steps Timeline */}
         <div className="relative">
           {/* Timeline Line */}
-          <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#0A5C36] via-[#ff7400] to-[#0A5C36]" />
+          <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 top-0 bottom-0 w-0.5 bg-linear-to-b from-[#0A5C36] via-[#ff7400] to-[#0A5C36]" />
 
           {/* Steps Grid */}
           <div className="space-y-12 lg:space-y-0">
@@ -70,7 +70,7 @@ const HowItWorks = () => {
                         <span>Step {step.number}</span>
                       </div>
                       <div className="flex items-center mb-4 lg:justify-start">
-                        <div className={`p-3 rounded-xl bg-gradient-to-br from-[#0A5C36] to-[#ff7400] ${isEven ? "lg:ml-auto" : ""}`}>
+                        <div className={`p-3 rounded-xl bg-linear-to-br from-[#0A5C36] to-[#ff7400] ${isEven ? "lg:ml-auto" : ""}`}>
                           <Icon className="h-6 w-6 text-white" />
                         </div>
                         <h3 className={`text-2xl font-bold text-gray-900 ml-4 ${isEven ? "lg:ml-4" : ""}`}>
@@ -92,7 +92,7 @@ const HowItWorks = () => {
                   {/* Center Number */}
                   <div className="relative my-8 lg:my-0">
                     <div className="w-16 h-16 rounded-full bg-white border-4 border-white shadow-lg flex items-center justify-center z-10 relative">
-                      <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#0A5C36] to-[#ff7400] flex items-center justify-center">
+                      <div className="w-12 h-12 rounded-full bg-linear-to-br from-[#0A5C36] to-[#ff7400] flex items-center justify-center">
                         <span className="text-white font-bold text-lg">{step.number}</span>
                       </div>
                     </div>
@@ -108,7 +108,7 @@ const HowItWorks = () => {
 
         {/* CTA */}
         <div className="mt-20 text-center">
-          <div className="inline-flex items-center bg-gradient-to-r from-[#0A5C36]/10 to-[#ff7400]/10 p-1 rounded-full mb-6">
+          <div className="inline-flex items-center bg-linear-to-r from-[#0A5C36]/10 to-[#ff7400]/10 p-1 rounded-full mb-6">
             <div className="flex items-center bg-white px-6 py-2 rounded-full">
               <Target className="h-5 w-5 text-[#0A5C36] mr-2" />
               <span className="font-semibold text-gray-900">Ready to Start?</span>

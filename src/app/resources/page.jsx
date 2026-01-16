@@ -10,7 +10,11 @@ const getResources = async () => {
     if (!res.ok) {
         throw new Error('Failed to fetch resources');
     }
-
+    // custom delay
+    await new Promise((resolve) => setTimeout(() => {
+        resolve();
+    }, 3000)
+    );
     return res.json();
 };
 
@@ -29,7 +33,7 @@ const Resources = async () => {
                     Browse our curated collection of learning materials
                 </p>
             </div>
-            <div className="grid grid-cols-4 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                 {
                     resources?.map(resource => {
                         return <ResourceCard key={resource?.id} resource={resource}></ResourceCard>

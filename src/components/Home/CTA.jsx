@@ -3,18 +3,18 @@ import Link from "next/link";
 
 const CallToAction = () => {
   return (
-    <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
+    <section className="py-20 bg-linear-to-b from-gray-50 to-white">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           {/* Main CTA Card */}
-          <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#0A5C36] via-[#0a7c46] to-[#0A5C36] p-1">
+          <div className="relative overflow-hidden rounded-3xl bg-linear-to-br from-[#0A5C36] via-[#0a7c46] to-[#0A5C36] p-1">
             {/* Animated Background Elements */}
             <div className="absolute top-0 left-0 w-64 h-64 bg-white/5 rounded-full -translate-x-1/2 -translate-y-1/2" />
             <div className="absolute bottom-0 right-0 w-96 h-96 bg-white/5 rounded-full translate-x-1/3 translate-y-1/3" />
             
             <div className="relative bg-white rounded-3xl p-8 md:p-12">
               {/* Badge */}
-              <div className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-[#0A5C36]/10 to-[#ff7400]/10 mb-6">
+              <div className="inline-flex items-center px-4 py-2 rounded-full bg-linear-to-r from-[#0A5C36]/10 to-[#ff7400]/10 mb-6">
                 <Sparkles className="h-4 w-4 text-[#0A5C36] mr-2" />
                 <span className="text-sm font-semibold text-[#0A5C36]">Limited Time Offer</span>
               </div>
@@ -40,7 +40,7 @@ const CallToAction = () => {
                   "No hidden fees, ever",
                 ].map((feature) => (
                   <div key={feature} className="flex items-center">
-                    <CheckCircle className="h-5 w-5 text-[#0A5C36] mr-3 flex-shrink-0" />
+                    <CheckCircle className="h-5 w-5 text-[#0A5C36] mr-3 shrink-0" />
                     <span className="text-gray-700">{feature}</span>
                   </div>
                 ))}
@@ -102,8 +102,8 @@ const CallToAction = () => {
             </div>
 
             {/* Floating Elements */}
-            <div className="absolute -top-6 -right-6 w-24 h-24 rounded-full bg-gradient-to-br from-[#ff7400] to-orange-500 opacity-20 animate-pulse" />
-            <div className="absolute -bottom-8 -left-8 w-32 h-32 rounded-full bg-gradient-to-br from-[#0A5C36] to-green-500 opacity-10" />
+            <div className="absolute -top-6 -right-6 w-24 h-24 rounded-full bg-linear-to-br from-[#ff7400] to-orange-500 opacity-20 animate-pulse" />
+            <div className="absolute -bottom-8 -left-8 w-32 h-32 rounded-full bg-linear-to-br from-[#0A5C36] to-green-500 opacity-10" />
           </div>
 
           {/* Final Note */}

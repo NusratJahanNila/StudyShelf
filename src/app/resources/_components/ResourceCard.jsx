@@ -14,7 +14,7 @@ const ResourceCard = ({ resource }) => {
             {/* Image/Thumbnail Section */}
             <div className="relative h-48 overflow-hidden">
                 {/* Image Container */}
-                <div className="relative w-full h-full bg-gradient-to-br from-gray-100 to-gray-200">
+                <div className="relative w-full h-full bg-linear-to-br from-gray-100 to-gray-200">
                     <Image
                         src={resource.image}
                         alt={resource.title}

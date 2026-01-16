@@ -90,7 +90,7 @@ const Categories = () => {
                 className="group bg-white rounded-xl border border-gray-200 p-6 hover:border-transparent hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 cursor-pointer"
               >
                 {/* Icon with gradient background */}
-                <div className={`inline-flex p-3 rounded-xl bg-gradient-to-br ${category.color} mb-4 transform group-hover:scale-110 transition-transform duration-300`}>
+                <div className={`inline-flex p-3 rounded-xl bg-linear-to-br ${category.color} mb-4 transform group-hover:scale-110 transition-transform duration-300`}>
                   <Icon className="h-6 w-6 text-white" />
                 </div>
 
@@ -109,7 +109,7 @@ const Categories = () => {
                 </div>
 
                 {/* Hover Effect Line */}
-                <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#ff7400] to-transparent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-center" />
+                <div className="absolute bottom-0 left-0 right-0 h-1 bg-linear-to-r from-transparent via-[#ff7400] to-transparent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-center" />
               </div>
             );
           })}

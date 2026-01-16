@@ -47,7 +47,7 @@ const WhoItsFor = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-white to-gray-50">
+    <section className="py-20 bg-linear-to-b from-white to-gray-50">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -69,10 +69,10 @@ const WhoItsFor = () => {
                 className="group relative bg-white rounded-2xl border border-gray-200 p-8 hover:border-transparent hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2"
               >
                 {/* Background Gradient */}
-                <div className={`absolute inset-0 bg-gradient-to-br ${persona.color} opacity-0 group-hover:opacity-5 rounded-2xl transition-opacity duration-500`} />
+                <div className={`absolute inset-0 bg-linear-to-br ${persona.color} opacity-0 group-hover:opacity-5 rounded-2xl transition-opacity duration-500`} />
 
                 {/* Icon */}
-                <div className="inline-flex p-4 rounded-xl bg-gradient-to-br from-gray-100 to-white border border-gray-200 group-hover:border-transparent group-hover:shadow-lg mb-6 transition-all duration-300">
+                <div className="inline-flex p-4 rounded-xl bg-linear-to-br from-gray-100 to-white border border-gray-200 group-hover:border-transparent group-hover:shadow-lg mb-6 transition-all duration-300">
                   <Icon className="h-8 w-8 text-gray-700 group-hover:text-[#0A5C36] transition-colors duration-300" />
                 </div>
 

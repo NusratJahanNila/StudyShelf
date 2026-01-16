@@ -69,7 +69,7 @@ const Benefits = () => {
                 className="group relative bg-white rounded-xl border border-gray-200 p-8 hover:border-transparent hover:shadow-2xl transition-all duration-500"
               >
                 {/* Animated Background */}
-                <div className="absolute inset-0 bg-gradient-to-br from-gray-50 to-white rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="absolute inset-0 bg-linear-to-br from-gray-50 to-white rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
                 {/* Number Badge */}
                 <div className="absolute -top-3 -left-3 w-8 h-8 rounded-full bg-[#ff7400] flex items-center justify-center text-white font-bold text-sm">
@@ -91,7 +91,7 @@ const Benefits = () => {
                 <p className="text-gray-600 mb-4">{benefit.description}</p>
 
                 {/* Animated Bottom Line */}
-                <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-[#0A5C36] to-transparent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-center" />
+                <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-linear-to-r from-transparent via-[#0A5C36] to-transparent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-center" />
               </div>
             );
           })}
