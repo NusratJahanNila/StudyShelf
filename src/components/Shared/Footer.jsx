@@ -33,9 +33,9 @@ const Footer = () => {
           {/* Brand Column */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <BookOpen className="h-8 w-8 text-[#0A5C36]" />
+              <BookOpen className="h-8 w-8 text-[#ff7400]" />
               <span className="text-2xl font-bold text-gray-900">
-                Study<span className="text-[#0A5C36]">Shelf</span>
+                Study<span className="text-[#ff7400]">Shelf</span>
               </span>
             </div>
             <p className="text-gray-600 mb-6 max-w-md">

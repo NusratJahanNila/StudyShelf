@@ -2,7 +2,7 @@
   {
     "id": "1",
     "title": "JavaScript Interview Question Pack",
-    "shortDescription": "150+ JavaScript interview questions with clear explanations.",
+    "shortDescription": "150+ JavaScript interview questions.",
     "fullDescription": "A carefully curated collection of JavaScript interview questions covering fundamentals, ES6+, closures, async programming, and common real-world scenarios. Ideal for frontend and full-stack developers preparing for technical interviews.",
     "category": "Programming",
     "level": "Beginner to Intermediate",
@@ -12,7 +12,7 @@
     "author": "StudyShelf Team",
     "price": "Free",
     "lastUpdated": "2025-01-10",
-    "image": "/resources/javascript.png",
+    "image": "https://i.ibb.co.com/pv0g40Gp/Java-Script-Interview-Questions-and-Answers-2024.webp",
     "tags": ["JavaScript", "Frontend", "Interview"]
   },
   {
@@ -28,7 +28,7 @@
     "author": "StudyShelf Team",
     "price": "Free",
     "lastUpdated": "2025-01-08",
-    "image": "/resources/react.png",
+    "image": "https://i.ibb.co.com/ksbXwXrm/react-js-notes-for-professionals.png",
     "tags": ["React", "Frontend", "Web Development"]
   },
   {
@@ -44,7 +44,7 @@
     "author": "StudyShelf Team",
     "price": "$4.99",
     "lastUpdated": "2024-12-22",
-    "image": "/resources/dsa.png",
+    "image": "https://i.ibb.co.com/Wv4r6422/4620250726121927.png",
     "tags": ["DSA", "Algorithms", "Interview"]
   },
   {
@@ -60,7 +60,7 @@
     "author": "StudyShelf Team",
     "price": "$6.99",
     "lastUpdated": "2025-01-05",
-    "image": "/resources/system-design.png",
+    "image": "https://i.ibb.co.com/dwnwV1Qm/661e2cffac8a307e381ad173-What-is-System-Design-A-Guide-to-Building-Better-Product.webp",
     "tags": ["System Design", "Backend", "Architecture"]
   },
   {
@@ -76,7 +76,7 @@
     "author": "StudyShelf Team",
     "price": "Free",
     "lastUpdated": "2024-12-30",
-    "image": "/resources/css.png",
+    "image": "https://i.ibb.co.com/tpsmd21n/1711939281478-e-2147483647-v-beta-t-DNRFE7b-HXg4-R5-Fx-E2-Eyy-B0i-Essx-CUM1eu-Aqy-Svao-Fn-Y.png",
     "tags": ["CSS", "Flexbox", "Grid"]
   },
   {
@@ -92,7 +92,7 @@
     "author": "StudyShelf Team",
     "price": "Free",
     "lastUpdated": "2025-01-02",
-    "image": "/resources/git.png",
+    "image": "https://i.ibb.co.com/CCLZRzH/images-q-tbn-ANd9-Gc-Qw-D6-Tm-Ecj-OFhhqqfc-C8h-Um-KH9-Y2-Ju-Aj1vxz-Q-s.png",
     "tags": ["Git", "GitHub", "Version Control"]
   },
   {
@@ -108,7 +108,7 @@
     "author": "StudyShelf Team",
     "price": "$3.99",
     "lastUpdated": "2025-01-01",
-    "image": "/resources/frontend-roadmap.png",
+    "image": "https://i.ibb.co.com/gbTG0d3m/Front-End-Developer-Roadmap.webp",
     "tags": ["Frontend", "Roadmap", "Career"]
   },
   {
@@ -124,7 +124,7 @@
     "author": "StudyShelf Team",
     "price": "$5.99",
     "lastUpdated": "2024-12-28",
-    "image": "/resources/node.png",
+    "image": "https://i.ibb.co.com/HTSkbFtn/Node-JS-copy.webp",
     "tags": ["Node.js", "Backend", "JavaScript"]
   },
   {
@@ -140,7 +140,7 @@
     "author": "StudyShelf Team",
     "price": "Free",
     "lastUpdated": "2024-12-20",
-    "image": "/resources/sql.png",
+    "image": "https://i.ibb.co.com/S4y2yHPf/SQL-Practice-Questions-with-Sollutions.webp",
     "tags": ["SQL", "Database", "Practice"]
   },
   {
@@ -156,7 +156,7 @@
     "author": "StudyShelf Team",
     "price": "Free",
     "lastUpdated": "2025-01-06",
-    "image": "/resources/interview.png",
+    "image": "https://i.ibb.co.com/wZC19shx/Behavioral-Interview.webp",
     "tags": ["Interview", "Career", "Soft Skills"]
   },
   {
@@ -172,7 +172,7 @@
     "author": "StudyShelf Team",
     "price": "$4.49",
     "lastUpdated": "2024-12-18",
-    "image": "/resources/api.png",
+    "image": "https://i.ibb.co.com/ZjCfTTW/images-q-tbn-ANd9-Gc-Rcg-Yjh8-ZN2-Uc-DD6-ZZ9-GVfpk-UTH8-ACFi38-Dz-Q-s.jpg",
     "tags": ["API", "Backend", "REST"]
   },
   {
@@ -188,7 +188,7 @@
     "author": "StudyShelf Team",
     "price": "Free",
     "lastUpdated": "2025-01-04",
-    "image": "/resources/planner.png",
+    "image": "https://i.ibb.co.com/TM0Q3rcN/productivity-planner.png",
     "tags": ["Productivity", "Planning", "Study"]
   }
 ]
