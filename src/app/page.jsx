@@ -1,6 +1,7 @@
-"use client"
+
 import Categories from '@/components/Home/Categories';
 import CTA from '@/components/Home/CTA';
+import FeaturedResources from '@/components/Home/FeaturedResources';
 import Hero from '@/components/Home/Hero';
 import HowItWorks from '@/components/Home/HowItWorks';
 import WhatWeOffer from '@/components/Home/WhatWeOffer';
@@ -12,6 +13,7 @@ const HomePage = () => {
      <main className="min-h-screen">
       <Hero />
       <Categories />
+      <FeaturedResources/>
       <HowItWorks />
       <WhoItsFor />
       <WhatWeOffer />
