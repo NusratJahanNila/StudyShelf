@@ -23,14 +23,14 @@ const Navbar = () => {
   const handleLogout = () => {
     document.cookie = "studyshelf-auth=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
     setIsLoggedIn(false);
+    
     window.location.href = "/";
   };
 
   const navLinks = [
     { name: "Home", href: "/" },
     { name: "Resources", href: "/resources" },
-    { name: "Categories", href: "#categories" },
-    { name: "How It Works", href: "#how-it-works" },
+    { name: "Add Resources", href: "/add-resources" },
   ];
 
   return (
