@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { BookOpen, LogIn, LogOut } from "lucide-react";
 import { useState, useEffect } from "react";
+import Swal from "sweetalert2";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -23,14 +24,19 @@ const Navbar = () => {
   const handleLogout = () => {
     document.cookie = "studyshelf-auth=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
     setIsLoggedIn(false);
-    
+    Swal.fire({
+      title: "Logout Successfully!",
+      icon: "success",
+      draggable: true
+    });
+
     window.location.href = "/";
   };
 
   const navLinks = [
     { name: "Home", href: "/" },
     { name: "Resources", href: "/resources" },
-    { name: "Add Resources", href: "/add-resources" },
+    { name: "Add Resources", href: "/dashboard/add-resources" },
   ];
 
   return (
@@ -51,15 +57,13 @@ const Navbar = () => {
               <Link
                 key={link.name}
                 href={link.href}
-                className={`relative font-bold text-gray-600 hover:text-gray-900 transition-colors duration-300 ${
-                  pathname === link.href ? "text-[#0A5C36]" : ""
-                }`}
+                className={`relative font-bold text-gray-600 hover:text-gray-900 transition-colors duration-300 ${pathname === link.href ? "text-[#0A5C36]" : ""
+                  }`}
               >
                 <span className="relative px-2 py-1">
                   {link.name}
-                  <span className={`absolute bottom-0 left-0 w-full h-0.5 bg-[#0A5C36] transform origin-left transition-transform duration-300 ${
-                    pathname === link.href ? "scale-x-100" : "scale-x-0"
-                  }`} />
+                  <span className={`absolute bottom-0 left-0 w-full h-0.5 bg-[#0A5C36] transform origin-left transition-transform duration-300 ${pathname === link.href ? "scale-x-100" : "scale-x-0"
+                    }`} />
                 </span>
               </Link>
             ))}
