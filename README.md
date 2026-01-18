@@ -133,33 +133,17 @@ vi. Developer Friendly: Clean component structure, consistent coding style, and 
 
 Technologies Used
 ----
-Framework: Next.js 15 (App Router)
+i. Framework: Next.js 15 (App Router)
 
-Styling: Tailwind CSS
+ii. Styling: Tailwind CSS
 
-Icons: Lucide React
+iii. Icons: Lucide React
 
-Images: Next.js Image Optimization
+iv. Images: Next.js Image Optimization
 
-Carousel: react-responsive-carousel
+v. Carousel: react-responsive-carousel
 
-Notifications: SweetAlert2
+vi. Notifications: SweetAlert2
 
-Deployment: Vercel (optimized)
+vii. Deployment: Vercel (optimized)
 
-🔮 Future Enhancements
-User registration system
-
-Search and filter functionality
-
-Resource ratings and reviews
-
-User profiles and bookmarks
-
-Real database integration
-
-Payment integration for premium resources
-
-Dark mode support
-
-PWA capabilities
