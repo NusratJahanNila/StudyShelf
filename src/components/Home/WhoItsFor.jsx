@@ -47,11 +47,11 @@ const WhoItsFor = () => {
   ];
 
   return (
-    <section className="py-20 bg-linear-to-b from-white to-gray-50">
-      <div className="container mx-auto px-4">
+    <section className="py-10 bg-linear-to-b from-white to-gray-50 ">
+      <div className="container mx-auto px-4 mb-16">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+        <div className="text-center mb-10">
+          <h2 className="text-4xl font-bold text-gray-900 mb-2">
             Who Is <span className="text-[#ff7400]">StudyShelf</span> For?
           </h2>
           <p className="text-gray-500 max-w-2xl mx-auto">
@@ -60,7 +60,7 @@ const WhoItsFor = () => {
         </div>
 
         {/* Personas Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-10">
           {personas.map((persona) => {
             const Icon = persona.icon;
             return (

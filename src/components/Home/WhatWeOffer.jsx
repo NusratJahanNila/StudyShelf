@@ -1,122 +1,101 @@
-import { Clock, Target, Users, Zap, Award, Shield, TrendingUp, Sparkles } from "lucide-react";
+import Image from "next/image";
+import { Clock, Target, Users, Award } from "lucide-react";
 
 const Benefits = () => {
   const benefits = [
     {
       icon: Clock,
       title: "Time-Efficient Learning",
-      description: "Curated content saves hundreds of hours searching for quality resources",
-      metric: "Save 40+ hours monthly",
+      description: "Spend less time searching and more time learning.",
       color: "bg-blue-100 text-blue-600",
     },
     {
       icon: Target,
       title: "Structured Pathways",
-      description: "Follow proven learning paths designed by industry experts",
-      metric: "10+ structured paths",
+      description: "Clear, guided learning paths built by experts.",
       color: "bg-green-100 text-green-600",
     },
     {
       icon: Users,
       title: "Community Support",
-      description: "Join a network of learners, share insights, and grow together",
-      metric: "50K+ active members",
+      description: "Learn together with motivated students worldwide.",
       color: "bg-purple-100 text-purple-600",
     },
     {
-      icon: Zap,
-      title: "Updated Content",
-      description: "Regularly refreshed materials keeping pace with industry changes",
-      metric: "Weekly updates",
-      color: "bg-orange-100 text-orange-600",
-    },
-    {
       icon: Award,
-      title: "Quality Assured",
-      description: "Every resource vetted by subject matter experts for accuracy",
-      metric: "100% expert-reviewed",
-      color: "bg-amber-100 text-amber-600",
-    },
-    {
-      icon: Shield,
-      title: "Risk-Free Learning",
-      description: "Try resources risk-free with our satisfaction guarantee",
-      metric: "30-day guarantee",
-      color: "bg-emerald-100 text-emerald-600",
+      title: "Quality Resources",
+      description: "Handpicked content reviewed for accuracy.",
+      color: "bg-orange-100 text-orange-600",
     },
   ];
 
   return (
-    <section className="py-20">
+    <section className="py-10 bg-linear-to-b from-white to-gray-50 mb-16">
       <div className="container mx-auto px-4">
-        {/* Section Header */}
-        <div className="text-center mb-16">
+        {/* Header */}
+        <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
             Why Choose <span className="text-[#ff7400]">StudyShelf</span>?
           </h2>
           <p className="text-gray-500 max-w-2xl mx-auto">
-            Experience the difference with our learner-centric approach
+            Discover the advantages of our curated learning platform
           </p>
         </div>
 
-        {/* Benefits Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-          {benefits.map((benefit, index) => {
-            const Icon = benefit.icon;
-            return (
-              <div
-                key={benefit.title}
-                className="group relative bg-white rounded-xl border border-gray-200 p-8 hover:border-transparent hover:shadow-2xl transition-all duration-500"
-              >
-                {/* Animated Background */}
-                <div className="absolute inset-0 bg-linear-to-br from-gray-50 to-white rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-
-                {/* Number Badge */}
-                <div className="absolute -top-3 -left-3 w-8 h-8 rounded-full bg-[#ff7400] flex items-center justify-center text-white font-bold text-sm">
-                  {index + 1}
-                </div>
-
-                {/* Icon & Metric */}
-                <div className="flex items-center justify-between mb-6">
-                  <div className={`p-3 rounded-lg ${benefit.color} transform group-hover:scale-110 transition-transform duration-300`}>
-                    <Icon className="h-6 w-6" />
-                  </div>
-                  <div className="text-sm font-semibold px-3 py-1 bg-gray-100 rounded-full">
-                    {benefit.metric}
-                  </div>
-                </div>
-
-                {/* Title & Description */}
-                <h3 className="text-xl font-bold text-gray-900 mb-3">{benefit.title}</h3>
-                <p className="text-gray-600 mb-4">{benefit.description}</p>
-
-                {/* Animated Bottom Line */}
-                <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-linear-to-r from-transparent via-[#0A5C36] to-transparent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-center" />
-              </div>
-            );
-          })}
-        </div>
-
-        {/* Stats Section */}
-        <div className="bg-[#0A5C36]/80 rounded-2xl p-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {[
-              { value: "50K+", label: "Active Learners", icon: Users },
-              { value: "500+", label: "Resources", icon: Award },
-              { value: "98%", label: "Satisfaction Rate", icon: TrendingUp },
-              { value: "24/7", label: "Access", icon: Sparkles },
-            ].map((stat) => {
-              const Icon = stat.icon;
+        {/* Main Grid - Equal Height Layout */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 ">
+          {/* Left: Benefits Cards */}
+          <div className="grid grid-cols-1 gap-6">
+            {benefits.map((item) => {
+              const Icon = item.icon;
               return (
-                <div key={stat.label} className="text-center">
-                  <div className="flex justify-center mb-4">
-                    <Icon className="h-8 w-8 text-white/80" />
+                <div
+                  key={item.title}
+                  className="group bg-white rounded-xl border border-gray-200 p-8 hover:border-transparent hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 cursor-pointer min-h-30 flex"
+                >
+                  <div className="flex items-start gap-6 w-full">
+                    {/* Icon Container with Increased Spacing */}
+                    <div className={`p-4 rounded-xl ${item.color} group-hover:scale-110 transition-transform duration-300 shrink-0`}>
+                      <Icon className="w-7 h-7" />
+                    </div>
+
+                    {/* Text Content with Increased Spacing */}
+                    <div className="flex-1 pt-1">
+                      <h3 className="text-xl font-semibold text-gray-900 mb-3 group-hover:text-[#0A5C36] transition-colors duration-300">
+                        {item.title}
+                      </h3>
+                      <p className="text-gray-600 text-base leading-relaxed">
+                        {item.description}
+                      </p>
+                      
+                     
+                    </div>
                   </div>
-                  <div className="text-4xl font-bold text-white mb-2">{stat.value}</div>
-                  <div className="text-white/80 text-sm">{stat.label}</div>
                 </div>
               );
             })}
+          </div>
+
+          {/* Right: Image Section */}
+          <div className="relative group h-full">
+            <div className="relative h-full rounded-2xl overflow-hidden border-2 border-gray-200 hover:border-transparent hover:shadow-2xl transition-all duration-500 transform group-hover:-translate-y-2">
+              {/* Image Container with Fixed Dimensions */}
+              <div className="relative w-full h-full min-h-150 md:min-h-175 lg:min-h-170">
+                <Image
+                  src="https://thumbs.dreamstime.com/b/student-school-boy-studying-computer-online-lesson-education-vector-concept-student-school-boy-studying-computer-114522764.jpg"
+                  alt="Why choose StudyShelf"
+                  width={600}
+                  height={800}
+                  className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105"
+                  priority
+                />
+                
+                
+                
+              </div>
+            </div>
+
+            
           </div>
         </div>
       </div>

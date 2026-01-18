@@ -4,25 +4,17 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <section className=" flex items-center overflow-hidden">
+    <section className=" flex items-center overflow-hidden bg-linear-to-br from-[#0A5C36]/10 via-white to-[#ff7400]/10">
       <div className="container mx-auto p-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - Image */}
           <div className="relative order-2 lg:order-1">
             <Image 
-              src={"https://i.ibb.co.com/v44LCwGQ/photo-1501504905252-473c47e087f8-q-80-w-1074-auto-format-fit-crop-ixlib-rb-4-1.jpg"}
+              src={"https://i.ibb.co.com/bgdMdHLK/student-pupil-in-learning-process-online-education-home-schooling-students-sit-at-the-table-and-stud.jpg"}
               alt="study image"
               width={600}
               height={600}
               className="rounded-2xl p-2 " />
-
-            {/* Floating Elements */}
-            <div className="absolute -top-4 -right-4 bg-white p-4 rounded-xl shadow-lg transform rotate-6">
-              <div className="flex items-center space-x-2">
-                <TrendingUp className="h-5 w-5 text-[#ff7400]" />
-                <span className="text-sm font-semibold">+85% Success Rate</span>
-              </div>
-            </div>
           </div>
 
           {/* Right Column - Content */}

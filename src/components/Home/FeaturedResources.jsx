@@ -32,8 +32,8 @@ const FeaturedResources = async () => {
         <section className="py-12 bg-gray-50">
             <div className="container mx-auto px-4">
                 {/* Section Header */}
-                <div className="mb-8">
-                    <h2 className="text-3xl font-bold text-gray-900 mb-2">
+                <div className="mb-8 text-center">
+                    <h2 className="text-4xl font-bold text-gray-900 mb-2">
                         Featured <span className="text-[#ff7400]">Resources</span>
                     </h2>
                     <p className="text-gray-600">Curated study materials for effective learning</p>
@@ -49,6 +49,7 @@ const FeaturedResources = async () => {
                                 src={mainResource.image}
                                 alt={mainResource.title}
                                 fill
+                                sizes="(max-width: 1024px) 100vw, 50vw"
                                 className="object-cover"
                             />
                             {/* Category & Price */}
