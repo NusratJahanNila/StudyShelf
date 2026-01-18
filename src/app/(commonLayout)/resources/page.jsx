@@ -3,7 +3,7 @@ import ResourceCard from './_components/ResourceCard';
 
 const getResources = async () => {
     const res = await fetch(
-        'http://localhost:3000/resource.json',
+        'https://study-shelf-chi.vercel.app/resource.json',
         { cache: 'no-store' }
     );
 

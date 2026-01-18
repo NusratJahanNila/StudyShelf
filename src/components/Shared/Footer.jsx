@@ -1,6 +1,6 @@
 // components/Footer.tsx
 import Link from "next/link";
-import { BookOpen, Github, Twitter, Linkedin, Mail, ChevronRight } from "lucide-react";
+import { BookOpen, Github, CircleUser, Linkedin, Mail, ChevronRight } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -46,9 +46,9 @@ const Footer = () => {
             {/* Social Links */}
             <div className="flex space-x-4">
               {[
-                { icon: Github, href: "#", label: "GitHub" },
-                { icon: Twitter, href: "#", label: "Twitter" },
-                { icon: Linkedin, href: "#", label: "LinkedIn" },
+                { icon: Github, href: "https://github.com/NusratJahanNila", label: "GitHub" },
+                { icon: CircleUser , href: "https://peaceful-blini-f4395f.netlify.app/", label: "Portfolio" },
+                { icon: Linkedin, href: "https://www.linkedin.com/in/nusrat-jahan-web/", label: "LinkedIn" },
               ].map((social) => (
                 <a
                   key={social.label}

@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 const getFeaturedResources = async () => {
     const res = await fetch(
-        'http://localhost:3000/resource.json',
+        'https://study-shelf-chi.vercel.app/resource.json',
         { cache: 'no-store' }
     );
 
