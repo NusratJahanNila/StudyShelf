@@ -51,7 +51,7 @@ const Navbar = () => {
   const navLinks = [
     { name: "Home", href: "/" },
     { name: "Resources", href: "/resources" },
-    { name: "Add Resources", href: "/dashboard/add-resource" }, // 🔥 Fixed: should be singular
+    { name: "Add Resources", href: "/dashboard/add-resources" }, // 🔥 Fixed: should be singular
   ];
 
   return (
